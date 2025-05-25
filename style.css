@@ -1,61 +1,42 @@
-/* General Styling */
 body {
   font-family: sans-serif;
   margin: 0;
   background: #111;
   color: white;
   text-align: center;
-  padding-top: 100px; /* biar kontennya gak ketimpa header */
+  padding-top: 100px; /* biar konten ga ketiban header */
 }
 
-/* Header Styling */
 header {
+  background-color: #000;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #000;
+  padding: 20px 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  border-bottom: 1px solid #444;
 }
 
-header .container {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
+  padding: 0 20px;
 }
 
 .logo {
-  height: 50px;
+  height: 40px;
 }
 
 nav a {
-  color: white;
+  color: #fff;
+  margin: 0 10px;
   text-decoration: none;
-  margin-left: 25px;
-  font-weight: bold;
 }
 
 nav a:hover {
   color: #00d9ff;
-}
-
-/* Other elements */
-h1 {
-  font-size: 2.5rem;
-  color: #00d9ff;
-}
-
-.tagline {
-  font-style: italic;
-  margin-bottom: 30px;
-}
-
-footer {
-  margin-top: 40px;
-  font-size: 0.9rem;
-  color: #888;
 }
