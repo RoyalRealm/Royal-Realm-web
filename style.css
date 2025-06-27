@@ -116,3 +116,51 @@ nav a:hover {
 .card:hover {
   transform: scale(1.05);
   }
+/* ==== MOBILE OPTIMIZATION ==== */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 10px;
+  }
+
+  .hero-banner {
+    width: 100%;
+    height: auto;
+  }
+}
