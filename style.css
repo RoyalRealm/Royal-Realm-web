@@ -198,3 +198,19 @@ nav a:hover {
     font-size: 1rem;
   }
 }
+
+/* === JUDUL GAMBAR (GANTI H1) === */
+.title-img {
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 10px;
+}
+
+/* RESPONSIF UNTUK MOBILE */
+@media screen and (max-width: 768px) {
+  .title-img {
+    max-width: 80%;
+  }
+}
