@@ -7,15 +7,16 @@ body {
   padding-top: 100px; /* biar konten ga ketiban header */
 }
 
+/* === NAVBAR / HEADER === */
 header {
-  background-color: #000;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 0;
   z-index: 1000;
-  border-bottom: 1px solid #444;
+  background: transparent;
+  padding: 20px 0;
+  border-bottom: 1px solid transparent; /* bisa ubah ke #444 kalau mau garis */
 }
 
 .container {
@@ -43,17 +44,19 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 nav a:hover {
   color: #00d9ff;
 }
 
-/* HERO SECTION */
+/* === HERO SECTION === */
 .hero {
   position: relative;
   text-align: center;
   color: white;
+  margin-top: 100px; /* offset supaya gak ketiban navbar */
 }
 
 .hero-banner {
@@ -63,7 +66,7 @@ nav a:hover {
   object-fit: cover;
 }
 
-/* INTRO SECTION */
+/* === INTRO (JUDUL + TAGLINE + BUTTON) === */
 .intro {
   text-align: center;
   padding: 40px 20px;
@@ -71,9 +74,11 @@ nav a:hover {
   color: white;
 }
 
-.intro h1 {
-  font-size: 2.5rem;
-  color: #00d9ff;
+.title-img {
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
 }
 
 .intro .tagline {
@@ -82,7 +87,7 @@ nav a:hover {
   color: #ccc;
 }
 
-/* BUTTON */
+/* === BUTTON === */
 .btn {
   display: inline-block;
   margin-top: 15px;
@@ -99,7 +104,7 @@ nav a:hover {
   background: #00aacc;
 }
 
-/* SECTION */
+/* === SECTION UMUM === */
 .section {
   padding: 60px 20px;
   text-align: center;
@@ -111,7 +116,7 @@ nav a:hover {
   color: #00d9ff;
 }
 
-/* CARD CONTAINER */
+/* === KARTU (TALENT, PROGRAM, DST) === */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -119,14 +124,13 @@ nav a:hover {
   gap: 20px;
 }
 
-/* CARD */
 .card {
   background: #222;
   padding: 20px;
   border-radius: 10px;
   width: 200px;
   color: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s;
 }
 
@@ -134,7 +138,7 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* ==== MOBILE OPTIMIZATION ==== */
+/* === MOBILE RESPONSIVE === */
 @media screen and (max-width: 768px) {
   body {
     padding: 20px;
@@ -171,7 +175,6 @@ nav a:hover {
     font-size: 1rem;
   }
 
-  /* PERBAIKAN NAVBAR DI MOBILE */
   nav {
     flex-direction: row;
     justify-content: center;
@@ -190,27 +193,11 @@ nav a:hover {
     max-height: none;
   }
 
-  .intro h1 {
-    font-size: 1.8rem;
+  .title-img {
+    max-width: 80%;
   }
 
   .intro .tagline {
     font-size: 1rem;
-  }
-}
-
-/* === JUDUL GAMBAR (GANTI H1) === */
-.title-img {
-  max-width: 90%;
-  height: auto;
-  margin: 0 auto;
-  display: block;
-  padding-bottom: 10px;
-}
-
-/* RESPONSIF UNTUK MOBILE */
-@media screen and (max-width: 768px) {
-  .title-img {
-    max-width: 80%;
   }
 }
