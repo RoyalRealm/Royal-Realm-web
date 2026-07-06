@@ -201,3 +201,131 @@ nav a:hover {
     font-size: 1rem;
   }
 }
+
+/* ===================================== */
+/* FOOTER */
+/* ===================================== */
+
+.footer{
+
+    margin-top:80px;
+
+    background:#0d0d0d;
+
+    border-top:3px solid #00d9ff;
+
+    padding:60px 40px 20px;
+
+}
+
+.footer-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:50px;
+
+    text-align:left;
+
+}
+
+.footer-logo{
+
+    width:170px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-column h3{
+
+    color:#00d9ff;
+
+    margin-bottom:20px;
+
+}
+
+.footer-column p{
+
+    color:#cccccc;
+
+    line-height:1.8;
+
+}
+
+.footer-column a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+}
+
+.footer-column a:hover{
+
+    color:#00d9ff;
+
+    transform:translateX(6px);
+
+}
+
+.footer-bottom{
+
+    margin-top:50px;
+
+    border-top:1px solid #333;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    color:#999;
+
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:768px){
+
+.footer{
+
+padding:50px 25px;
+
+}
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+gap:40px;
+
+}
+
+.footer-logo{
+
+margin:auto auto 20px;
+
+}
+
+.footer-column a:hover{
+
+transform:none;
+
+}
+
+}
