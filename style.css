@@ -317,15 +317,10 @@ gap:40px;
 }
 
 .footer-logo{
-
-margin:auto auto 20px;
-  .footer-logo img{
     width: 70px;
     height: auto;
     display: block;
-    margin: 0 auto;
-}
-
+    margin-bottom: 20px;
 }
 
 .footer-column a:hover{
